@@ -1,0 +1,37 @@
+
+#pFrame {
+  visibility: visible;
+	display: block;
+	margin: auto;
+  animation: expand 2s forwards;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(360deg, rgb(251, 251, 255) 0.00%, rgb(215, 223, 252) 71.08%);
+  z-index:50;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(112,120,75,0.2)0px 16px 24px 0px;
+  overflow-y: hidden;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}   
+@keyframes expand {
+    from {
+      height: 0%;
+      width: 0%;
+      border: 1px solid white;
+    }
+    to {
+      width: 97%;
+      height:97%;
+      border: 0px;
+    }
+  }
+body{
+  
+}
